@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CMC — Creating Multiple Creations | $750 Websites for Nashville & Nationwide Service Businesses</title>
+<meta name="description" content="CMC builds mobile-first websites for local service businesses in Nashville and nationwide for a flat $750. Plus $75–125/month care plans and virtual admin support. No tech skills needed.">
+<style>
+  :root{
+    --bg:#0b0e14; --panel:#121722; --panel2:#171e2c; --line:#232c3f;
+    --text:#eef2f8; --muted:#9aa7ba; --accent:#f5b83d; --accent2:#4cc2ff;
+    --radius:16px;
+  }
+  *{box-sizing:border-box; margin:0; padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg); color:var(--text); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; line-height:1.55}
+  a{color:inherit; text-decoration:none}
+  .wrap{max-width:1080px; margin:0 auto; padding:0 20px}
+  header{position:sticky; top:0; background:rgba(11,14,20,.92); backdrop-filter:blur(8px); border-bottom:1px solid var(--line); z-index:10}
+  .nav{display:flex; align-items:center; justify-content:space-between; padding:14px 0}
+  .logo{font-weight:800; letter-spacing:.5px; font-size:1.25rem}
+  .logo span{color:var(--accent)}
+  .nav-links{display:flex; gap:22px; font-size:.95rem; color:var(--muted)}
+  .nav-links a:hover{color:var(--text)}
+  .btn{display:inline-block; background:var(--accent); color:#14100a; font-weight:700; padding:12px 22px; border-radius:999px; font-size:.95rem; border:none; cursor:pointer}
+  .btn:hover{filter:brightness(1.08)}
+  .btn.ghost{background:transparent; color:var(--text); border:1px solid var(--line)}
+  .hero{padding:72px 0 56px; text-align:center}
+  .hero .kicker{color:var(--accent2); text-transform:uppercase; letter-spacing:2px; font-size:.78rem; font-weight:700}
+  .hero h1{font-size:clamp(2rem,5.5vw,3.4rem); line-height:1.12; margin:16px auto 14px; max-width:760px}
+  .hero h1 em{color:var(--accent); font-style:normal}
+  .hero p{color:var(--muted); max-width:620px; margin:0 auto 28px; font-size:1.05rem}
+  .hero .cta-row{display:flex; gap:12px; justify-content:center; flex-wrap:wrap}
+  .hero .note{margin-top:16px; font-size:.85rem; color:var(--muted)}
+  section{padding:44px 0}
+  h2{font-size:1.7rem; margin-bottom:8px}
+  .sub{color:var(--muted); margin-bottom:26px; max-width:640px}
+  .grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:18px}
+  .card{background:var(--panel); border:1px solid var(--line); border-radius:var(--radius); padding:26px; transition:transform .2s}
+  .card:hover{transform:translateY(-4px)}
+  .card.featured{background:var(--panel2); border-color:var(--accent)}
+  .card .tag{display:inline-block; font-size:.72rem; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:var(--accent2); margin-bottom:10px}
+  .card h3{font-size:1.2rem; margin-bottom:6px}
+  .price{font-size:1.9rem; font-weight:800; margin:8px 0 2px}
+  .price small{font-size:.85rem; color:var(--muted); font-weight:500}
+  .card ul{list-style:none; margin-top:14px}
+  .card li{padding:6px 0 6px 24px; position:relative; color:var(--muted); font-size:.95rem}
+  .card li::before{content:"✓"; position:absolute; left:0; color:var(--accent); font-weight:800}
+  .card .btn{margin-top:18px}
+  .card p.body{color:var(--muted); font-size:.95rem}
+  .steps{display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:18px}
+  .step{background:var(--panel); border:1px solid var(--line); border-radius:var(--radius); padding:24px}
+  .step .num{width:38px; height:38px; border-radius:50%; background:var(--accent); color:#14100a; font-weight:800; display:flex; align-items:center; justify-content:center; margin-bottom:12px}
+  .step h3{font-size:1.05rem; margin-bottom:6px}
+  .step p{color:var(--muted); font-size:.95rem}
+  .about{background:var(--panel); border:1px solid var(--line); border-radius:var(--radius); padding:30px}
+  .about p{color:var(--muted); max-width:720px}
+  .about p + p{margin-top:12px}
+  form .fields{display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:16px}
+  form input, form textarea{padding:14px; background:var(--panel); border:1px solid var(--line); border-radius:8px; color:var(--text); font-family:inherit; font-size:.95rem; width:100%}
+  form textarea{grid-column:1 / -1}
+  .contact{text-align:center; padding:56px 0 70px}
+  .contact h2{margin-bottom:10px}
+  .contact p{color:var(--muted); margin-bottom:24px}
+  footer{border-top:1px solid var(--line); padding:22px 0 30px; color:var(--muted); font-size:.85rem; text-align:center}
+  @media (max-width:640px){ .nav-links{display:none} .hero{padding:52px 0 40px} }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <div class="logo">CMC <span>·</span> Creating Multiple Creations</div>
+    <nav class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#sample">Sample Work</a>
+      <a href="#how">How It Works</a>
+      <a href="#faq">FAQ</a>
+      <a href="#about">About</a>
+    </nav>
+    <a class="btn" href="#quote">Get a Quote</a>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <div class="kicker">Websites · Care Plans · Admin Support</div>
+    <!-- HEADLINE: Nyjal to pick from Grok's 5 options; current = option 1 -->
+    <h1>We build your site and <em>make you sound legit.</em></h1>
+    <p>Clean, mobile-first websites for local service businesses — built fast, priced flat, and backed by a real person who keeps it running after launch.</p>
+    <div class="cta-row">
+      <a class="btn" href="#services">See the $750 Website Package</a>
+      <a class="btn ghost" href="#quote">Get a Flat Quote</a>
+    </div>
+    <div class="note">Based in Nashville, TN · Working with clients nationwide · Sample site below — see exactly what $750 buys</div>
+  </div>
+</div>
+
+<section id="sample">
+  <div class="wrap">
+    <h2>Sample Work</h2>
+    <p class="sub">Here's exactly what one of our $750 websites looks like. This is Music City Plumbing Co. — our demo plumber in Nashville.</p>
+    <div class="card featured">
+      <div class="tag">Demo</div>
+      <h3>Music City Plumbing Co.</h3>
+      <p class="body">Nashville plumber · Click-to-call · Google Maps · Basic SEO</p>
+      <!-- DEMO LINK: point to the hosted demo site once it's live -->
+      <a class="btn" href="#">View Demo Site</a>
+      <p class="body" style="margin-top:14px">(Demo link goes live once the demo site is hosted.)</p>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <h2>Services</h2>
+    <p class="sub">Flat pricing, no hourly meter running. You always know what you're paying before we start.</p>
+    <div class="grid">
+
+      <div class="card featured">
+        <div class="tag">Most Popular</div>
+        <h3>Local Service Business Website</h3>
+        <div class="price">$750 <small>flat · ~2 weeks</small></div>
+        <ul>
+          <li>3–5 page custom website (WordPress)</li>
+          <li>Mobile-first design — most of your customers are on phones</li>
+          <li>Click-to-call button on every page</li>
+          <li>Google Maps embed so customers find you</li>
+          <li>Quote / contact form that emails you directly</li>
+          <li>Basic local SEO setup</li>
+          <li>30 days of free fixes after launch</li>
+          <li>Walkthrough video so you can update it yourself</li>
+        </ul>
+        <a class="btn" href="#quote">Start My Site</a>
+      </div>
+
+      <div class="card">
+        <div class="tag">Recurring</div>
+        <h3>Website Care Plan</h3>
+        <div class="price">$75–125 <small>/month · no long contract</small></div>
+        <ul>
+          <li><strong>Watch — $75/mo:</strong> updates, backups, 30 min of edits</li>
+          <li><strong>Maintain — $100/mo:</strong> 60 min of edits + monthly health report</li>
+          <li><strong>Protect — $125/mo:</strong> 120 min of edits + real-time alerts + monthly summary</li>
+          <li>Hosting, security &amp; updates handled</li>
+          <li>One less thing on your plate every month</li>
+        </ul>
+        <a class="btn ghost" href="#quote">Add a Care Plan</a>
+      </div>
+
+      <div class="card">
+        <div class="tag">Support</div>
+        <h3>Admin &amp; Web Support</h3>
+        <div class="price">Custom <small>quoted up front</small></div>
+        <ul>
+          <li>Virtual admin and data entry support</li>
+          <li>Website updates and cleanup on existing sites</li>
+          <li>Sales support and follow-up tasks</li>
+          <li>Flexible — one-off projects or ongoing help</li>
+        </ul>
+        <a class="btn ghost" href="#quote">Ask About Support</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="how">
+  <div class="wrap">
+    <h2>How it works</h2>
+    <p class="sub">Simple from first message to launch day.</p>
+    <div class="steps">
+      <div class="step">
+        <div class="num">1</div>
+        <h3>Quick call or message</h3>
+        <p>Tell us what your business does and what you need the site to do. We'll tell you straight if we're the right fit.</p>
+      </div>
+      <div class="step">
+        <div class="num">2</div>
+        <h3>Build in ~2 weeks</h3>
+        <p>We design and build your site, you review it, we fix what you flag. No disappearing — you hear from us the whole way.</p>
+      </div>
+      <div class="step">
+        <div class="num">3</div>
+        <h3>Launch + walkthrough</h3>
+        <p>Your site goes live with a walkthrough video, 30 days of free fixes, and the option of a care plan so it stays handled.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <div class="about">
+      <h2>About CMC</h2>
+      <p>CMC — Creating Multiple Creations — is a one-brand studio run by Nyjal Ward in Nashville, Tennessee. It started with a simple observation: plenty of good local businesses lose customers every day because they have no website, or one that hasn't been touched in years.</p>
+      <p>CMC fixes that with flat-priced websites, honest timelines, and support that continues after launch. Websites today — and more creations on the way.</p>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <h2>FAQ</h2>
+    <p class="sub">Straight answers. No jargon, no pressure.</p>
+    <div class="grid">
+      <div class="card"><h3>Do I need any tech skills?</h3><p class="body">Nope. You just tell us what your business does and what you need the site to do. We handle everything.</p></div>
+      <div class="card"><h3>How long does it really take?</h3><p class="body">2 weeks from first call to site live. We communicate the whole way — no radio silence.</p></div>
+      <div class="card"><h3>What happens after 30 days?</h3><p class="body">You get a free walkthrough video so you can update the site yourself. Add a care plan if you want it fully hands-off.</p></div>
+      <div class="card"><h3>Do you only work with Nashville businesses?</h3><p class="body">No. We serve clients nationwide — same flat pricing, same quality.</p></div>
+      <div class="card"><h3>Can I see a real example?</h3><p class="body">Yes. Check out our demo site for Music City Plumbing Co. (a fictional Nashville plumber) — exactly what your site will look like.</p></div>
+      <div class="card"><h3>Do I have to pay anything up front?</h3><p class="body">No. You only pay after the site is live and you like it.</p></div>
+      <div class="card"><h3>Can I add a care plan later?</h3><p class="body">Absolutely. Every website comes with the option to add a care plan on launch day.</p></div>
+      <div class="card"><h3>What if my business is in another city?</h3><p class="body">Works great. Same process, same price, same quality — anywhere in the US.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="quote">
+  <div class="wrap">
+    <h2>Get a flat quote in 24 hours</h2>
+    <p class="sub">Tell us about your business and what you need. No pressure. No jargon. You'll get a straight answer.</p>
+    <!-- FORM ACTION: placeholder email until Nyjal confirms the real client contact / domain -->
+    <form action="mailto:ngx.kxsper@gmail.com?subject=Website%20quote%20request%20—%20CMC" method="post" enctype="text/plain">
+      <div class="fields">
+        <input type="text" name="name" placeholder="Your name" required>
+        <input type="tel" name="phone" placeholder="Phone number" required>
+        <input type="email" name="email" placeholder="Email address" required>
+        <textarea name="business" rows="4" placeholder="What does your business do? (plumber, HVAC, landscaper, etc.)" required></textarea>
+        <textarea name="details" rows="4" placeholder="What do you need the site to do? (quote form, click-to-call, Google Maps, etc.)"></textarea>
+      </div>
+      <button type="submit" class="btn" style="margin-top:20px">Send Quote Request</button>
+    </form>
+  </div>
+</section>
+
+<div class="contact" id="contact">
+  <div class="wrap">
+    <h2>Ready to look legit online?</h2>
+    <p>Tell us about your business and what you need. You'll get a straight answer and a flat quote — no pressure, no jargon.</p>
+    <a class="btn" href="mailto:ngx.kxsper@gmail.com?subject=Website%20quote%20request%20—%20CMC">Email CMC</a>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">© 2026 CMC · Creating Multiple Creations · Nashville, TN</div>
+</footer>
+
+</body>
+</html>
