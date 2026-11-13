@@ -13,7 +13,8 @@
 
 <script>addEventListener("load",()=>setTimeout(()=>{const g=document.createElement("script");g.async=1;g.src="https://www.googletagmanager.com/gtag/js?id=G-KT0L1N2RJC";document.head.appendChild(g)},1500))</script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-KT0L1N2RJC');</script>
-<script>(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,"clarity","script","z21hg4r46d");</script>
+<!-- Clarity waits for a tap, a keypress, or 30s so its cookies are not part of the first paint. -->
+<script>(function(){var started=false;function start(){if(started)return;started=true;(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,"clarity","script","z21hg4r46d")}["pointerdown","keydown"].forEach(function(type){addEventListener(type,start,{once:true,passive:true})});addEventListener("load",function(){setTimeout(start,30000)})})();</script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
 {"@type":"ProfessionalService","@id":"https://wealthyward.site/#org","name":"NDW INC","alternateName":"CMC — Creating Multiple Creations","url":"https://wealthyward.site/","email":"winning@wealthyward.site","telephone":"+1-615-200-6415","areaServed":"Worldwide","priceRange":"$449–$1,495","description":"Websites and monthly care plans for local service businesses.",
@@ -37,9 +38,9 @@
 *{box-sizing:border-box}body{margin:0;font:17px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--ink);background:var(--bg)}
 a{color:var(--navy)}.wrap{max-width:1120px;margin:auto;padding:0 20px}
 .skip{position:absolute;left:-999px}.skip:focus{left:10px;top:10px;background:#fff;padding:8px;z-index:99}
-header{background:var(--navy);color:#fff;position:sticky;top:0;z-index:10}header .wrap{display:flex;justify-content:space-between;align-items:center;padding:12px 20px}
+header{background:var(--navy);color:#fff;position:sticky;top:0;z-index:10}header .wrap{display:flex;justify-content:space-between;align-items:center;gap:10px 16px;flex-wrap:wrap;padding:12px 20px}
 .logo{font-weight:800;letter-spacing:.5px;color:#fff;text-decoration:none;font-size:20px}.logo span{color:var(--gold)}
-nav a{color:#dfe7f2;margin-left:18px;text-decoration:none;font-size:15px}
+nav{display:flex;flex-wrap:wrap;justify-content:flex-end;align-items:center}nav a{color:#dfe7f2;margin-left:18px;text-decoration:none;font-size:15px}nav a:focus-visible,.btn:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
 .btn{display:inline-block;background:var(--gold);color:#111;font-weight:700;padding:14px 22px;border-radius:10px;text-decoration:none;border:0;cursor:pointer;font-size:17px}
 .btn.ghost{background:transparent;color:#fff;border:2px solid #fff}
 .hero{background:linear-gradient(135deg,#0b1f3a,#16386b);color:#fff;padding:64px 0 72px}
@@ -57,17 +58,18 @@ details{background:#fff;border-radius:10px;padding:14px 18px;margin:10px 0;box-s
 form label{display:block;font-weight:600;margin:12px 0 4px}form input,form select,form textarea{width:100%;padding:12px;border:1px solid #c5cfdb;border-radius:8px;font:inherit}
 table{border-collapse:collapse;width:100%;background:#fff}td,th{padding:10px;border-bottom:1px solid #e3e8ef;text-align:left}
 footer{background:var(--navy);color:#cbd6e4;padding:30px 0;font-size:14px}footer a{color:#fff}
-.sticky{display:none}@media(max-width:720px){nav{display:none}.sticky{display:flex;position:fixed;bottom:0;left:0;right:0;gap:8px;padding:10px;background:#fff;box-shadow:0 -2px 10px rgba(0,0,0,.15);z-index:20}.sticky a{flex:1;text-align:center}body{padding-bottom:76px}}
+.pkg-cta{display:block;text-align:center;margin-top:16px}.card.price,.card.plan{display:flex;flex-direction:column}.card.price .pkg-cta,.card.plan .pkg-cta{margin-top:auto}
+.sticky{display:none}@media(max-width:720px){nav a:not(.quote-link){display:none}nav a.quote-link{margin-left:0}.sticky{display:flex;position:fixed;bottom:0;left:0;right:0;gap:8px;padding:10px;background:#fff;box-shadow:0 -2px 10px rgba(0,0,0,.15);z-index:20}.sticky a{flex:1;text-align:center}body{padding-bottom:76px}}
 .kicker{margin:.4em 0 .2em;font-size:1.1em}</style></head><body>
 <a class="skip" href="#main">Skip to content</a>
-<header><div class="wrap"><a class="logo" href="/">NDW <span>INC</span></a><nav aria-label="Main"><a href="#samples">Samples</a><a href="#pricing">Pricing</a><a href="/web-doctor/">Web Doctor</a><a href="/marketing/">Marketing</a><a href="#faq">FAQ</a><a href="#quote">Get a quote</a></nav></div></header>
+<header><div class="wrap"><a class="logo" href="/">NDW <span>INC</span></a><nav aria-label="Main"><a href="#samples">Samples</a><a href="#pricing">Pricing</a><a href="/web-doctor/">Web Doctor</a><a href="/marketing/">Marketing</a><a href="#faq">FAQ</a><a class="quote-link" href="/quote/">Get a quote</a></nav></div></header>
 <main id="main">
 <section class="hero"><div class="wrap">
 <h1>Your next customer is searching right now. Make sure they find <em>you</em>.</h1>
 <p class="kicker"><strong>Websites for plumbers, HVAC and local service businesses.</strong></p>
 <p>NDW INC builds fast, mobile-first websites for plumbers, HVAC, electricians, roofers, landscapers and other service pros. You pay nothing until it's live and you like it.</p>
 <div class="chips"><span>✓ No upfront cost</span><span>✓ Flat written quote</span><span>✓ 30 days free fixes</span><span>✓ You own everything</span></div>
-<a class="btn" href="#quote" data-ev="hero_quote">Get my free sketch</a> &nbsp; <a class="btn ghost" href="#samples" data-ev="hero_samples">See sample sites</a>
+<a class="btn" href="/quote/" data-ev="hero_quote">Get my free sketch</a> &nbsp; <a class="btn ghost" href="#samples" data-ev="hero_samples">See sample sites</a>
 </div></section>
 
 <section id="samples"><div class="wrap">
@@ -81,7 +83,7 @@ footer{background:var(--navy);color:#cbd6e4;padding:30px 0;font-size:14px}footer
 
 <section style="background:#fff"><div class="wrap grid">
 <div><h2>How it works</h2><ol class="steps">
-<li><strong>Tell us about your business</strong> (2-minute form or a text).</li>
+<li><strong>Tell us about your business</strong> (2-minute <a href="/quote/">form</a> or a text).</li>
 <li><strong>Get a free homepage sketch</strong> and a flat written quote.</li>
 <li><strong>We build it</strong>: Design, Development, SEO and Client Support teams.</li>
 <li><strong>You review, request changes</strong> (2 rounds included).</li>
@@ -98,13 +100,13 @@ footer{background:var(--navy);color:#cbd6e4;padding:30px 0;font-size:14px}footer
 <h2>Founding-cohort launch pricing</h2>
 <p class="lead">Our standard rates sit just under the typical freelancer price. Launch prices are for our founding clients and step up when the cohort fills.</p>
 <div class="grid">
-<div class="card price"><h3>Launch Pad</h3><p>1-page site</p><s>$895</s><br><b>$449</b><p>Perfect if you have no website yet.</p></div>
-<div class="card price flag"><h3>Business Website</h3><p>3–5 pages</p><s>$1,995</s><br><b>$750</b><p>Services, service area, reviews and quote pages.</p></div>
-<div class="card price"><h3>Growth Website</h3><p>Up to 8 pages + blog/booking + advanced SEO</p><s>$3,495</s><br><b>$1,495</b></div>
+<div class="card price"><h3>Launch Pad</h3><p>1-page site</p><s>$895</s><br><b>$449</b><p>Perfect if you have no website yet.</p><a class="btn pkg-cta" data-checkout="launch-pad" data-checkout-label="Launch Pad" href="/quote/?package=launch-pad" data-ev="pkg_launch_pad">Get started</a></div>
+<div class="card price flag"><h3>Business Website</h3><p>3–5 pages</p><s>$1,995</s><br><b>$750</b><p>Services, service area, reviews and quote pages.</p><a class="btn pkg-cta" data-checkout="business-website" data-checkout-label="Business Website" href="/quote/?package=business-website" data-ev="pkg_business">Get started</a></div>
+<div class="card price"><h3>Growth Website</h3><p>Up to 8 pages + blog/booking + advanced SEO</p><s>$3,495</s><br><b>$1,495</b><a class="btn pkg-cta" data-checkout="growth-website" data-checkout-label="Growth Website" href="/quote/?package=growth-website" data-ev="pkg_growth">Get started</a></div>
 </div>
-<p><small>Every build includes 2 revision rounds and 30 days of free fixes.</small></p>
+<p><small>Every build includes 2 revision rounds and 30 days of free fixes.</small> <a href="/quote/">Request a quote</a></p>
 <h3>Monthly care plans</h3>
-<div class="grid"><div class="card"><b>Watch: $75/mo</b><p>Hosting checks, uptime and security watch.</p></div><div class="card"><b>Maintain: $100/mo</b><p>Watch plus content and photo updates.</p></div><div class="card"><b>Protect: $125/mo</b><p>Maintain plus priority support.</p></div></div>
+<div class="grid"><div class="card plan"><b>Watch: $75/mo</b><p>Hosting checks, uptime and security watch.</p><a class="btn pkg-cta" data-checkout="care-watch" data-checkout-label="the Watch care plan" href="/quote/?package=care-watch" data-ev="pkg_watch">Get started</a></div><div class="card plan"><b>Maintain: $100/mo</b><p>Watch plus content and photo updates.</p><a class="btn pkg-cta" data-checkout="care-maintain" data-checkout-label="the Maintain care plan" href="/quote/?package=care-maintain" data-ev="pkg_maintain">Get started</a></div><div class="card plan"><b>Protect: $125/mo</b><p>Maintain plus priority support.</p><a class="btn pkg-cta" data-checkout="care-protect" data-checkout-label="the Protect care plan" href="/quote/?package=care-protect" data-ev="pkg_protect">Get started</a></div></div>
 <h3>Add-ons</h3>
 <table><tr><td>Logo & brand kit</td><td>$199</td></tr><tr><td>Google Business Profile setup</td><td>$149</td></tr><tr><td>Copywriting</td><td>$249</td></tr><tr><td>Local SEO pack</td><td>$299</td></tr><tr><td>Online store</td><td>from $600</td></tr><tr><td>Social media starter pack</td><td>$199</td></tr></table>
 <h3>How we compare</h3>
@@ -123,24 +125,14 @@ footer{background:var(--navy);color:#cbd6e4;padding:30px 0;font-size:14px}footer
 <section id="quote"><div class="wrap grid">
 <div><h2>Get your free sketch + flat quote</h2><p class="lead">Tell us a little about your business. We reply by email or text, usually the same day.</p>
 <p>📞 Call/Text: <a href="tel:+16152006415" data-ev="call">(615) 200-6415</a><br>✉️ <a href="mailto:winning@wealthyward.site" data-ev="email">winning@wealthyward.site</a></p></div>
-<form class="card" id="qf" action="https://formspree.io/f/xgaakjqj" method="POST" data-mailto="winning@wealthyward.site">
-<label for="n">Your name</label><input id="n" name="name" required autocomplete="name">
-<label for="b">Business name</label><input id="b" name="business" required autocomplete="organization">
-<label for="t">Trade</label><select id="t" name="trade"><option>Plumbing</option><option>HVAC</option><option>Electrical</option><option>Roofing</option><option>Landscaping</option><option>Painting</option><option>Handyman</option><option>Other</option></select>
-<label for="p">Phone</label><input id="p" name="phone" type="tel" autocomplete="tel">
-<label for="e">Email</label><input id="e" name="email" type="email" required autocomplete="email">
-<label for="w">Current website (if any)</label><input id="w" name="website" placeholder="none, Facebook page, or a URL">
-<label for="m">What do you need?</label><textarea id="m" name="message" rows="3"></textarea>
-<input type="text" name="_gotcha" style="display:none" tabindex="-1" aria-hidden="true">
-<p><button class="btn" type="submit">Send my request</button></p><p id="qs" role="status"></p></form>
+<div class="card"><h3>Tell us what you need</h3><p>Name, business, trade, and a budget range. Phone and your current site are optional. You choose email, text, neither, or both.</p><p><a class="btn" href="/quote/" data-ev="quote_form">Request a quote</a></p></div>
 </div></section>
 </main>
-<footer><div class="wrap"><a href="mailto:winning@wealthyward.site">winning@wealthyward.site</a><br>© 2026 NDW INC · CMC — Creating Multiple Creations · Design · Development · SEO & Marketing · Client Support<br>Sample sites shown are fictional businesses built for demonstration.<br>© 2026 NDW INC. All rights reserved.</div></footer>
-<div class="sticky"><a class="btn" href="#quote" data-ev="sticky_quote">Free quote</a><a class="btn" style="background:var(--navy);color:#fff" href="sms:+16152006415" data-ev="sticky_text">Text us</a></div>
+<footer><div class="wrap"><a href="mailto:winning@wealthyward.site">winning@wealthyward.site</a><br>© 2026 NDW INC · CMC — Creating Multiple Creations · Design · Development · SEO & Marketing · Client Support<br>Sample sites shown are fictional businesses built for demonstration.<br><a href="/quote/">Request a quote</a> · <a href="/privacy/">Privacy and terms</a><br>© 2026 NDW INC. All rights reserved.</div></footer>
+<div class="sticky"><a class="btn" href="/quote/" data-ev="sticky_quote">Free quote</a><a class="btn" style="background:var(--navy);color:#fff" href="sms:+16152006415" data-ev="sticky_text">Text us</a></div>
 <script>
 document.querySelectorAll('[data-ev]').forEach(a=>a.addEventListener('click',()=>{try{gtag('event',a.dataset.ev)}catch(e){}}));
-const f=document.getElementById('qf'),s=document.getElementById('qs');
-f.addEventListener('submit',async ev=>{ev.preventDefault();const d=new FormData(f);
- try{const r=await fetch(f.action,{method:'POST',body:d,headers:{Accept:'application/json'}});if(r.ok){s.textContent='Thanks! We got it and will reply soon.';f.reset();try{gtag('event','generate_lead')}catch(e){}}else throw 0}catch(e){s.textContent='Something went wrong. Please email winning@wealthyward.site.'}});
 </script>
+<script src="/js/site-config.js"></script>
+<script src="/js/checkout.js"></script>
 </body></html>
