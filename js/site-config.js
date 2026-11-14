@@ -32,7 +32,7 @@
       the files, upload this file there too. Steps: OWNER-SETUP.md
 */
 window.NDW_CONFIG = {
-  FORM_ENDPOINT: "PASTE_FORM_ENDPOINT_HERE",
+  FORM_ENDPOINT: "https://formspree.io/f/xgaakjqj",
 
   CHECKOUT_LINKS: {
     "launch-pad": "",
